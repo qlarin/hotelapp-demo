@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>pl.stsledziona.demos</groupId>
+  <artifactId>hotelapp-demo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.richfaces.bom.version>4.1.0.Final</org.richfaces.bom.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.richfaces</groupId>
+				<artifactId>richfaces-bom</artifactId>
+				<version>${org.richfaces.bom.version}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.richfaces.ui</groupId>
+			<artifactId>richfaces-components-ui</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.richfaces.core</groupId>
+			<artifactId>richfaces-core-impl</artifactId>
+		</dependency>
+	</dependencies>
+  
+</project>
